@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>上傳檔案加上樣式</title>
+</head>
+<body>
+   <form enctype="multipart/form-data" method="post">
+    <input type="file" name="file" style="display:none; "onchange="this.form.upfile.value=this.value;">
+    <input type="text" name="upfile" size="20" readonly>
+    <input type="button" value="開啟檔案" onclick="this.form.file.click();">
+   <input type="Submit" name="Submit" value="上傳"></form>
+</body>
+</html>
+<!-- readonly:若希望這個標籤元素的內容是唯獨的，不可以變更，請加上這個屬性 -->
